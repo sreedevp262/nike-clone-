@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://stately-pudding-1dbd86.netlify.app/', // Allow only your frontend URL
+  origin:'https://stately-pudding-1dbd86.netlify.app/', // Allow only your frontend URL
   credentials: true, // Allow cookies and credentials
 }));
 app.use(helmet()); // Set security headers
@@ -53,4 +53,4 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port number ${PORT}`));
