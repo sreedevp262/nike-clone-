@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const helmet = require('helmet');
+// const helmet = require('helmet');
 
 
 // Load environment variables
@@ -16,7 +16,7 @@ app.use(cors({
   origin:'https://stately-pudding-1dbd86.netlify.app/', // Allow only your frontend URL
   credentials: true, // Allow cookies and credentials
 }));
-app.use(helmet()); // Set security headers
+// app.use(helmet()); // Set security headers
 app.use(express.json());
 
 // MongoDB Connection String
